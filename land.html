@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NATURE</title>
+
+	<style type="text/css">
+		
+		*{
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box;
+			font-family: time new roman;
+			font-weight: bold;
+		}
+
+		nav{
+
+			width: 100%;
+			height: 60px;
+			color: black;
+			background-color: black; 
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.logo{
+
+			font-size: 2em;
+			letter-spacing: 2px;
+			color: white;
+		}
+
+		.menu a{
+
+			text-decoration-style: none;
+			color: green;
+			padding: 10px 20px;
+			font-size: 20px;
+			position: relative;
+		}
+
+		.menu a:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			border-bottom: 2px solid indianred;
+			transition: 0.4% linear;
+		}
+		.menu a:hover:before{
+			width: 90%;
+		}
+
+		.search a{
+
+			text-decoration-style: none;
+			color: green;
+			padding: 10px 20px;
+			font-size: 20px;
+			background: #14B1FF;
+			border-radius: 8px;
+			transition: 0.4%;
+		}
+		.search a:hover{
+
+				background: transparent;
+				border: 1px solid indianred;
+		}
+		.image{
+			background: linear-gradient(black);
+		}
+		.h-txt{
+			max-width: 650px;
+			position: absolute;
+			top:50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center;
+			color: white;
+		}
+
+		.h-txt span{
+
+				letter-spacing: 5px;
+		}
+		.h-txt h1{
+			font-size: 3.5em;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<nav>
+			<div class="logo">
+				NATURE
+			</div>
+			<div class="menu">
+				<a href="#">HOME</a>
+				<a href="#">EARTH</a>
+				<a href="#">WATER</a>
+				<a href="#">FIRE</a>
+				<a href="#">WIND</a>
+				<a href="#">LAND</a>
+			</div>
+			<div class="search">
+				<a href="#">Search</a>
+			</div>
+		</nav>
+		<section class="h-txt">
+			<span>Enjoy</span>
+			<h1>Nature is not a place to visit, it is home.</h1>
+		</section>
+		<div class="image">
+			<img src="images/wp.jpg" width="100%" height="auto">
+		</div>
+	</header>
+</body>
+</html>
